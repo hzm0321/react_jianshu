@@ -9,9 +9,36 @@ import {
     NavSearch,
     Addition,
     Button,
-    SearchWrapper
+    SearchWrapper,
+    SearchInfo,
+    SearchInfoTitle,
+    SearchInfoSwitch,
+    SearchInfoItem,
+    SearchInfoList
 } from "./style";
 import {actionCreators} from "./store";
+
+const getList = (show) => {
+    if (show) {
+        return (
+            <SearchInfo>
+                <SearchInfoTitle>热门搜索</SearchInfoTitle>
+                <SearchInfoSwitch>换一批</SearchInfoSwitch>
+                <SearchInfoList>
+                    <SearchInfoItem>教育</SearchInfoItem>
+                    <SearchInfoItem>教育</SearchInfoItem>
+                    <SearchInfoItem>教育</SearchInfoItem>
+                    <SearchInfoItem>教育</SearchInfoItem>
+                    <SearchInfoItem>教育</SearchInfoItem>
+                    <SearchInfoItem>教育</SearchInfoItem>
+                    <SearchInfoItem>教育</SearchInfoItem>
+                </SearchInfoList>
+            </SearchInfo>
+        )
+    } else {
+        return null
+    }
+};
 
 // 修改Header为无状态组件,提高性能
 const Header = (props) => {
@@ -36,6 +63,7 @@ const Header = (props) => {
                             onBlur={props.handleInputBlur}/>
                     </CSSTransition>
                     <i className={props.focused ? 'iconfont focused' : 'iconfont'}>&#xe60c;</i>
+                    {getList(props.focused)}
                 </SearchWrapper>
 
             </Nav>
