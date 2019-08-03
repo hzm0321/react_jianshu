@@ -149,6 +149,7 @@ export const SearchInfoSwitch = styled.span`
   float: right;
   font-size: 13px;
   color: #969696;
+  cursor: pointer;
   .spin{
     display: block;
     float: left;

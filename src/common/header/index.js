@@ -42,9 +42,11 @@ class Header extends Component {
                     onMouseOver={this.props.handleMouseOver}>
                     <SearchInfoTitle>热门搜索</SearchInfoTitle>
                     <SearchInfoSwitch
-                        onClick={() => this.props.handleChangePage(page, totalPage,this.spinIcon)}>
+                        onClick={() => this.props.handleChangePage(page, totalPage, this.spinIcon)}>
                         <i
-                            ref={(icon)=>{this.spinIcon = icon}}
+                            ref={(icon) => {
+                                this.spinIcon = icon
+                            }}
                             className={"iconfont spin"}>&#xe865;</i>
                         换一批
                     </SearchInfoSwitch>
@@ -59,7 +61,7 @@ class Header extends Component {
     };
 
     render() {
-        const {focused} = this.props;
+        const {focused, list} = this.props;
         return (
             <HeaderWrapper>
                 <Logo href={'/'}/>
@@ -77,7 +79,7 @@ class Header extends Component {
                             classNames="slide">
                             <NavSearch
                                 className={focused ? 'focused' : ''}
-                                onFocus={this.props.handleInputFocus}
+                                onFocus={() => this.props.handleInputFocus(list)}
                                 onBlur={this.props.handleInputBlur}/>
                         </CSSTransition>
                         <i className={focused ? 'iconfont focused zoom' : 'iconfont zoom'}>&#xe60c;</i>
@@ -111,8 +113,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         // 点击了搜索框
-        handleInputFocus() {
-            dispatch(actionCreators.getList());
+        handleInputFocus(list) {
+            (list.size === 0 && dispatch(actionCreators.getList()));
             dispatch(actionCreators.searchFocus());
         },
         // 搜索框失焦
@@ -128,7 +130,7 @@ const mapDispatchToProps = (dispatch) => {
             dispatch(actionCreators.mouseOut())
         },
         // 改变热搜页面
-        handleChangePage(page, totalPage,spin) {
+        handleChangePage(page, totalPage, spin) {
             // 初始选择角度
             let originAngle = spin.style.transform.replace(/[^0-9]/ig, '');
             if (originAngle) {
