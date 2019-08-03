@@ -4,7 +4,10 @@ import {fromJS} from "immutable";
 const defaultState = fromJS(
     {
         focused: false,
-        list:[]
+        mouseIn: false,
+        list: [],
+        page: 1,
+        totalPage: 1
     }
 );
 
@@ -16,7 +19,20 @@ export default (state = defaultState, action) => {
         case actionTypes.SEARCH_BLUR:
             return state.set('focused', false);
         case actionTypes.GET_LIST:
-            return state.set('list', action.data);
+            // return state
+            //     .set('list', action.data)
+            //     .set('totalPage', action.totalPage);
+            // 使用merge进行多项赋值
+            return state.merge({
+                list: action.data,
+                totalPage: action.totalPage
+            });
+        case actionTypes.MOUSE_ENTER:
+            return state.set('mouseIn', true);
+        case actionTypes.MOUSE_OUT:
+            return state.set('mouseIn', false);
+        case actionTypes.CHANGE_PAGE:
+            return state.set('page', action.page);
         default:
             return state;
     }

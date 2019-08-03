@@ -10,10 +10,17 @@ export const searchBlur = () => ({
     type: actionTypes.SEARCH_BLUR
 });
 
-// 需把data数组转化成转化成immutable数组传入
-export const asyncGetList = (data) => ({
-    type: actionTypes.GET_LIST,
-    data: fromJS(data)
+export const mouseEnter = () => ({
+    type: actionTypes.MOUSE_ENTER
+});
+
+export const mouseOut = () => ({
+    type: actionTypes.MOUSE_OUT
+});
+
+export const changePage = (page) => ({
+    type: actionTypes.CHANGE_PAGE,
+    page
 });
 
 // 异步获取推荐关键词
@@ -31,3 +38,10 @@ export const getList = () => {
             })
     };
 };
+
+// 需把data数组转化成转化成immutable数组传入
+const asyncGetList = (data) => ({
+    type: actionTypes.GET_LIST,
+    data: fromJS(data),
+    totalPage: Math.ceil(data.length / 10)
+});

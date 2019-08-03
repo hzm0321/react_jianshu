@@ -1,13 +1,13 @@
 import {createGlobalStyle} from "styled-components";
 
 export const IconStyle = createGlobalStyle`
-    @font-face {font-family: "iconfont";
-  src: url('./iconfont.eot?t=1564758020335'); /* IE9 */
-  src: url('./iconfont.eot?t=1564758020335#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPQAAsAAAAAB9gAAAOEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqDFIJ6ATYCJAMQCwoABCAFhG0HSBvsBsgehXEsLIRUucLM3uPh69733N37XzatUqFetI+HMh6qIBFKSAMU4VioC/yjNnOAU5JTp2YnrgUqFlk4EidbEyr6ElNhALdsJudiecc3jD3YtotD1UyLwHyguMwxzkO5AIa3Bmzs2RYL3IJU0DuMXXkRqwkMWdQecVVc2RHcJKNTIJ4kUQNuKYWsSQ9N6EpGJsQrOGtlHHkGePF/P/7hINxA0atg9LxeRXrIPepnydSw/8Ogm4sA5ng6sHFUbAFJ3JUablFhYAtlSKnv5ARomsJYVQHPkv//R6y9CJr5L4+qCKIDI3UEHKFg5SvZjFhYoEyBwgFZN5CaoMGkZ+ANDNy8W6eiNLcAlVdwYPKiOXVH2qjq3GVaJD0nuJNmt2oCwFDQB+jx5wiF5xV/x0x2ywoYtlI14TBB8LwYwysKzU2bAh2znp3R3L3vklOhgXNWmBjEz169fWsLdufV9gP9uf3XiWvXuCtXOl69yk64nsP6sw0Drl/nU7T8N7t27YBQcrF14UXk+V9bcM2QXcOS+Vop+7rT72wHPpoaE5zzoq1tOMmju6oiN/1JDx6fDgn4oS1ei0h/1fNs5P4JiV0IkhhbDd4RfoVfyL0/bnPZ7dn2beEDg4Jj4ObQF2UJXRZ+N/QOGVNVHFBdBLGfK+4iNK8DLiAnHjo0iTKprpSaSOnxLAU4+gZCdzZuYJMmfiCVtWsUClOxjVTI4YjmUWFDsAH0/1MHKJ+gUJ2pwaED1H4q9wf+jYOvv/t6emV+dVM5AXxsuxO09xUnaM/8C0yF+buYLbNSZRvKTJljMzRj2kt0UjBkCD8pwpR7Y5hmQawLjTMhFAMWoGqWkIndgp5hR9BpTmHIppLxw6bJKJHuwIZRAMKE9VCMeYdqwllkYu9Cz5y30JkICobcBL8Zh62ERBfISIORntH2ZySd1SJYakwH6fVI7G3SyEm2j+eQ7JDcTFzt2XAJsiB5jD6OPmI8xgIjyFYzUwzWQyaTlbHJVgPS4ehGjG3pMW2VPSlaZzUD7ZIM0cAQPYZWfwyJjpWF4ObH6NzP10NEvZloyDUZFUoOInOQamfEiRbbAlkisLTKuJZzHPoQxcMwAUMgszJjFAMdYjIDVgxbeTMDRAeL1tjDZ5MuBuUS2gqi5xeZn3ABDDEGZJAERTgRzlDONeqj791B14h0RslCCxqLqNcYJFcOAA==') format('woff2'),
-  url('./iconfont.woff?t=1564758020335') format('woff'),
-  url('./iconfont.ttf?t=1564758020335') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-  url('./iconfont.svg?t=1564758020335#iconfont') format('svg'); /* iOS 4.1- */
+@font-face {font-family: "iconfont";
+  src: url('./iconfont.eot?t=1564824564902'); /* IE9 */
+  src: url('./iconfont.eot?t=1564824564902#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQoAAsAAAAACIAAAAPbAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqEFINlATYCJAMUCwwABCAFhG0HUxt8B8gehXEsLBShXb29MouH/5bv7puZ3Wzmp3ZVq+/HlyZcVFQiDBIUeJwAYyMMpQnLYJsWYMLcOTM6caOcWCUwWqeZ673EVBIgAPzgcGnTEphnWS5zDGpjgHFAgY01aWPABfLvL2g/TC9fnID1BKolQ2GX6bmlgFToboF4FngZIBNKpSIzdEJbMLaIT8Bclz7gZwDw0ft+/AbBkSRNpvtePaUpQeI32xeQaPrfBEY7CMAaTg82iYxtQCFeCo3PiCC4jVD575k5BVSdJH2zfeb2LPwF/P8fwd2QuBr/8CiyJIiWTh8ApyhU+GZrMSORG5TLUBQOKSR+QPa1pDegwpTPAPgHNG7ZeyZFkkadSHLSxmHG3bb2ypPS69fZq1eZuRcnXA649qzq+nP2ypXSa9ek8y71XPC9+tTB+sG21FptM2LkNH/rOZ7DZbttJgBQo3617jmHNbNss7dnLLNlBWhaaTPhMIY9sryEbW62lk6bAkonlMyMvs7iS055u4+a5cN7sLNXb9/aj9l5dWitq3T/dWwM+kj0ibMmXE9gXJmSmmUw1d9LEU1XzQK8rK6QO198WWu2wezVH2IvyRQzpNkbRdkt/l3xXuAAl3FxYOpFaP9fnnJNFV/A4MlyIf662e94EzoaKcHMz2j9IKlgN8YmJzH6yVgWnfZy++3d72M/f/DXdp4B3z8hdCSGx/t84FjwChev5/e7N2fdnm3c5lvr4Wnjvtn7RVbIyIXfVeVenXnpbvlpIPAVdyGcNwyl4BMPHZpEGDRHRkykjGieFETfgPDOxg1M2MQPePPaNc0EpmE73oy3ILpLg41BFYD/TWZYfucR/ucDBCA0EyOI+vCBvJ9I/AN+xv1o+MtxDrFfSZsC3tToC+R0Z75Gkcas9x1XMHA4ggNVTSkS8thWlkBjP+aWeLVFb9k65t4w0sk7GA6dyQiSPov6rBMsiCzYbWj0HEOrcwLVlozJPeNEhCj92NQOIIxYD8mQL5CNOIss2LvQmPIWWiMRUD2Ey5w9qwnWKSKUIaik5NWUoNDrOFODrP3MYsiXa2RinOPhpVA0CR4qiA5MRzKgDopDDDBV8MEIcRQn6rVUOtgMajR6yiDqVVCB6DKEDNESCVd0JVqh1wJrF0SQDAIpUeSqUQQKejqcUx2xzny+GMQrpyEjVpTl1FKQyESonxKEFtgAmSHUNSq7lEtMKvCCIQiHwhHpaVHSgR7SGEE9iqG4lQqkgNDKOvgNoklQJa6pkJ5erL3HNVDpwU2kyFGiiVb3ahB0Rx6IwpNktpfQf5iiDCrUgs6ak+l4pUwlOAoAAAA=') format('woff2'),
+  url('./iconfont.woff?t=1564824564902') format('woff'),
+  url('./iconfont.ttf?t=1564824564902') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./iconfont.svg?t=1564824564902#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -17,17 +17,4 @@ export const IconStyle = createGlobalStyle`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.iconAa:before {
-  content: "\e636";
-}
-
-.iconicon-checkin:before {
-  content: "\e615";
-}
-
-.iconfangdajing:before {
-  content: "\e60c";
-}
-
 `;
