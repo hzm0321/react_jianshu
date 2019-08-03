@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b31b76e8-3397-4287-a3a2-e91bcedf1164" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/common/header/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/header/store/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/header/store/actionCreators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/header/store/actionTypes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/header/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/header/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/header/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/header/store/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +26,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1OrvlALdV1lMsLvRuHegeWE28bB" />
@@ -86,7 +91,7 @@
       <updated>1564748678683</updated>
       <workItem from="1564748683140" duration="1963000" />
       <workItem from="1564752949912" duration="8913000" />
-      <workItem from="1564795584723" duration="4623000" />
+      <workItem from="1564795584723" duration="8829000" />
     </task>
     <task id="LOCAL-00001" summary="完成简书头部页面的效果制作">
       <created>1564761842627</created>
@@ -102,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564801896352</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="使用combineReducers对reducer文件做拆分">
+      <created>1564802946381</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564802946381</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成简书头部页面的效果制作" />
     <MESSAGE value="引入了redux" />
-    <option name="LAST_COMMIT_MESSAGE" value="引入了redux" />
+    <MESSAGE value="使用combineReducers对reducer文件做拆分" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用combineReducers对reducer文件做拆分" />
   </component>
 </project>

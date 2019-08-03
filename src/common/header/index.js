@@ -11,6 +11,7 @@ import {
     Button,
     SearchWrapper
 } from "./style";
+import {actionCreators} from "./store";
 
 // 修改Header为无状态组件,提高性能
 const Header = (props) => {
@@ -52,7 +53,7 @@ const Header = (props) => {
 // 数据映射
 const mapStateToProps = (state) => {
     return {
-        focused: state.header.focused
+        focused: state.getIn(['header', 'focused'])
     }
 };
 
@@ -60,16 +61,12 @@ const mapDispatchToProps = (dispatch) => {
     return {
         // 点击了搜索框
         handleInputFocus() {
-            const action = {
-                type: 'search_focus'
-            };
+            const action = actionCreators.searchFocus();
             dispatch(action);
         },
         // 搜索框失焦
         handleInputBlur() {
-            const action = {
-                type: 'search_blur'
-            };
+            const action = actionCreators.searchBlur();
             dispatch(action);
         }
     }
