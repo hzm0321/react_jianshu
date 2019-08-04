@@ -2,9 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b31b76e8-3397-4287-a3a2-e91bcedf1164" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/HZM.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/api/home" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/detail/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home/components/List.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home/components/Recommend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home/components/Topic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home/components/Writer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home/store/actionCreator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home/store/actionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home/store/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/header/store/actionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/header/store/actionCreators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/header/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/header/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +47,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -39,9 +59,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WorkPace\IDEAJavaWorkPace\jianshu\src\statics\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\WorkPace\IDEAJavaWorkPace\jianshu\src\statics\iconfont" />
     </key>
@@ -86,7 +109,8 @@
       <workItem from="1564748683140" duration="1963000" />
       <workItem from="1564752949912" duration="8913000" />
       <workItem from="1564795584723" duration="22438000" />
-      <workItem from="1564842096576" duration="2469000" />
+      <workItem from="1564842096576" duration="5196000" />
+      <workItem from="1564878360545" duration="13019000" />
     </task>
     <task id="LOCAL-00001" summary="完成简书头部页面的效果制作">
       <created>1564761842627</created>
@@ -137,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564843589148</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="优化异步请求,避免重复请求造成的资源浪费">
+      <created>1564844613825</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1564844613825</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +188,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="完成简书头部页面的效果制作" />
     <MESSAGE value="引入了redux" />
     <MESSAGE value="使用combineReducers对reducer文件做拆分" />
@@ -164,6 +196,7 @@
     <MESSAGE value="热门搜索样式布局" />
     <MESSAGE value="ajax发送请求获取热门搜索推荐数据,并展示" />
     <MESSAGE value="实现换一批功能和旋转动画" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现换一批功能和旋转动画" />
+    <MESSAGE value="优化异步请求,避免重复请求造成的资源浪费" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化异步请求,避免重复请求造成的资源浪费" />
   </component>
 </project>

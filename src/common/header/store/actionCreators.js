@@ -34,7 +34,7 @@ export const getList = () => {
                 dispatch(asyncGetList(data));
             })
             .catch(() => {
-                console.log('error')
+                console.log('search recommend error')
             })
     };
 };
